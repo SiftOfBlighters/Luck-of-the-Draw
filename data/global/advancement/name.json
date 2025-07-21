@@ -1,0 +1,23 @@
+{
+	"display": {
+		"icon": {
+			"id": "<item-or-block>"
+		},
+		"title": "<Data Pack Name>",
+		"description": [
+			"",
+			{
+				"text": "<description>",
+				"color": "gold"
+			}
+		],
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"parent": "global:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}

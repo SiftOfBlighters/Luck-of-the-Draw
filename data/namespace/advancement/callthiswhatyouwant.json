@@ -1,0 +1,17 @@
+{
+    "display": {
+        "title": "Data_Pack_Template",
+        "description": "Data Pack Template",
+        "icon": {
+            "item": "minecraft:emerald"
+        },
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "parent": "global:namespace",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}
