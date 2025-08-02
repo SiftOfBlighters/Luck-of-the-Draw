@@ -10,14 +10,18 @@ scoreboard objectives add deaths deathCount
 scoreboard objectives add timeLost dummy
 scoreboard objectives add kills playerKillCount
 scoreboard objectives add timeGained dummy
+scoreboard objectives add isRolling dummy
+scoreboard objectives add isLeprechaun dummy
+scoreboard objectives add damagedealt minecraft.custom:damage_dealt
+scoreboard objectives add leprechaunprogress dummy
 
 team add green {"text": "Green"}
 team add yellow {"text": "Yellow"}
 team add red {"text": "Red"}
 team add out {"text":"Out"}
-
-
-scoreboard objectives add luck dummy
+team modify green color dark_green
+team modify yellow color green
+team modify red color gold
 
 execute as @a run scoreboard players set @a hours 23
 execute as @a run scoreboard players set @a mins 59
@@ -30,4 +34,8 @@ execute as @a run scoreboard players set @a deaths 0
 execute as @a run scoreboard players set @a timeLost 0
 execute as @a run scoreboard players set @a kills 0
 execute as @a run scoreboard players set @a timeGained 0
+execute as @a run scoreboard players set @a isRolling 0
+execute as @a run scoreboard players set @a isLeprechaun 0
+execute as @a run scoreboard players set @a damagedealt 0
+execute as @a run scoreboard players set @a leprechaunprogress 0
 title @a times 0 60 20
